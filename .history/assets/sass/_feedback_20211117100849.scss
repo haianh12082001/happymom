@@ -1,0 +1,77 @@
+.feedback {
+    padding-bottom: 90px;
+    padding-top: 100px;
+    background-image: url("../img/feedback/Rectangle\ 8\ \(5\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__des {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #845522;
+    }
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 36px;
+        color: #845522;
+        font-family: "UTM";
+        // margin-bottom: 70px;
+    }
+    &__list {
+        margin-top: 70px;
+    }
+    &__list .slick-list {
+        margin: 0 -44px;
+    }
+    &__item {
+        text-align: center;
+        padding: 63px 44px 0px 44px;
+        .content {
+            background: #fff;
+            border-radius: 30px;
+            position: relative;
+            padding: 77px 22px 55px 22px;
+            height: 350px;
+        }
+        .avata {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            border: 2px solid #f8972e;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .name {
+            color: #f8972e;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .company {
+            font-weight: 400;
+            color: #845522;
+            margin-bottom: 12px;
+        }
+        .info {
+            color: #845522;
+            font-weight: 400;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+        &.slick-center {
+            transform: translateY(-50px);
+        }
+    }
+}

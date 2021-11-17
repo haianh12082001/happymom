@@ -1,0 +1,17 @@
+.introduce {
+    &__container {
+    }
+    &__item {
+        position: relative;
+        &--top {
+            .text {
+                color: #ffd7ab;
+                font-size: 180px;
+                font-weight: 700;
+            }
+            img {
+                position: absolute;
+            }
+        }
+    }
+}

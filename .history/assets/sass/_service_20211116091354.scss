@@ -1,0 +1,11 @@
+.service {
+}
+.serviceOne {
+    &__right {
+        padding: 0 33px;
+        .bigCircle {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

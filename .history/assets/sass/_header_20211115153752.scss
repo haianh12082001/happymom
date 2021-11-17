@@ -1,0 +1,17 @@
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    &__item {
+        margin-right: 66px;
+    }
+    &__link {
+        color: #fff;
+    }
+}

@@ -1,0 +1,11 @@
+.banner {
+    &__img img {
+        width: 100%;
+        max-height: 598px;
+    }
+    &__phone {
+        .text {
+            font-family: "UTM";
+        }
+    }
+}

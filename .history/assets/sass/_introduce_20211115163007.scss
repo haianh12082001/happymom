@@ -1,0 +1,18 @@
+.introduce {
+    &__container {
+    }
+    &__item {
+        &--top {
+            position: relative;
+            .text {
+                color: #ffd7ab;
+                font-size: 180px;
+                font-weight: 700;
+                font-family: "Time";
+            }
+            img {
+                position: absolute;
+            }
+        }
+    }
+}

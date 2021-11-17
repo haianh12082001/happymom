@@ -1,0 +1,14 @@
+.service {
+}
+.serviceOne {
+    &__right {
+        padding: 0 40px;
+        position: relative;
+    }
+    &__img--top {
+        position: absolute;
+    }
+    &__img--bottom {
+        position: absolute;
+    }
+}

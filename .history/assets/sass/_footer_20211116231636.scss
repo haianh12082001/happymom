@@ -1,0 +1,41 @@
+.footer {
+    background: #333333;
+    padding-top: 50px;
+    color: #fff;
+    &__title {
+        text-transform: uppercase;
+        font-family: "UTM";
+        font-size: 18px;
+        margin-bottom: 27px;
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 25px;
+        .home {
+            margin-right: 20px;
+            width: 20px;
+            height: 20px;
+            color: #f8972e;
+            flex-shrink: 0;
+        }
+        .phone {
+            margin-right: 20px;
+            font-size: 22px;
+            color: #f8972e;
+            height: 22px;
+            width: 22px;
+            transform: rotate(-45deg);
+        }
+    }
+    .info {
+        font-size: 14px;
+        padding-right: 36px;
+        .des {
+            margin: 0;
+        }
+        .info .name {
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+}

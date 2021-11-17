@@ -1,0 +1,29 @@
+.introduce {
+    &__container {
+    }
+    &__item {
+        padding: 0px 46px;
+        display: flex;
+        flex-direction: column;
+        &--top {
+            position: relative;
+            display: inline-block;
+            max-width: 180px;
+            height: 207px;
+
+            .text {
+                color: #ffd7ab;
+                font-size: 180px;
+                font-weight: 700;
+                font-family: "Time";
+                line-height: 206px;
+            }
+            img {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

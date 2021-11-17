@@ -1,0 +1,81 @@
+.service {
+    &__title {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    &__name {
+        text-transform: uppercase;
+        font-size: 36px;
+        color: $color-global;
+        font-family: "UTM";
+        font-weight: 400;
+        line-height: 52px;
+    }
+    &__text {
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+    &__btn {
+        position: relative;
+        a {
+            padding: 15px 28px 11px 28px;
+            background: linear-gradient(180deg, #f4d593 0%, #f8972e 100%);
+            border-radius: 50px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 500;
+            box-shadow: 0 3px 0px rgba($color: #c2611c, $alpha: 1);
+        }
+        &--img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translateX(50%);
+        }
+    }
+}
+.serviceOne {
+    padding: 80px 0;
+    &__left {
+        padding: 30px;
+    }
+    &__right {
+        padding: 0 40px;
+        position: relative;
+    }
+    .bigCircle__img img {
+        width: 100%;
+    }
+    &__img--top {
+        position: absolute;
+        top: -28px;
+        // left: 0;
+        padding: 20px;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+        transform: rotate(4.47deg);
+        border-radius: 20px;
+        background: #fff;
+        img {
+            width: 326px;
+            height: 258px;
+            // object-fit: cover;
+        }
+    }
+    &__img--bottom {
+        position: absolute;
+        bottom: -10px;
+        right: 70px;
+        padding: 20px;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+        transform: rotate(-7.32deg);
+        border-radius: 20px;
+        background: #fff;
+        img {
+            width: 326px;
+            height: 258px;
+        }
+    }
+}
+.serviceTwo {
+    background-image: url("../img/serviceTwo/Group\ 392\ \(1\).png");
+}

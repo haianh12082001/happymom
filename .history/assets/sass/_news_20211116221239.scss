@@ -1,0 +1,13 @@
+.news {
+    padding-top: 40px;
+    &__heading {
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "UTM";
+    }
+}

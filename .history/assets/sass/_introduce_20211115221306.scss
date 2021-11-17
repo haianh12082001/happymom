@@ -1,0 +1,13 @@
+.introduce {
+    background-image: url("../img/intro.png");
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: 100%;
+    &__img {
+        img {
+            // max-width: 511px;
+            max-height: 411px;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.introduce {
+    &__container {
+    }
+    &__item {
+        &--top {
+            position: relative;
+            display: inline-block;
+            .text {
+                color: #ffd7ab;
+                font-size: 180px;
+                font-weight: 700;
+                font-family: "Time";
+            }
+            img {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

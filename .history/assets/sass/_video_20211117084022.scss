@@ -1,0 +1,11 @@
+.video {
+    &__img {
+        width: 100%;
+        height: 442px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

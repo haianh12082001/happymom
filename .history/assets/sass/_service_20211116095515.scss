@@ -1,0 +1,22 @@
+.service {
+}
+.serviceOne {
+    &__right {
+        padding: 0 40px;
+        position: relative;
+    }
+    &__img--top {
+        position: absolute;
+        top: 0;
+        padding: 20px;
+        // filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+        transform: rotate(4.47deg);
+        border-radius: 20px;
+        background: #fff;
+        img {
+        }
+    }
+    &__img--bottom {
+        position: absolute;
+    }
+}

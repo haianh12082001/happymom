@@ -1,0 +1,14 @@
+.service {
+}
+.serviceOne {
+    &__right {
+        padding: 0 40px;
+        .bigCircle {
+            width: 100%;
+            height: 533px;
+            border: 2px dashed #cccccc;
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+    }
+}

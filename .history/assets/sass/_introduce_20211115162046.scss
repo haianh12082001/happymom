@@ -1,0 +1,14 @@
+.introduce {
+    &__container {
+    }
+    &__item {
+        position: relative;
+        &--top {
+            .text {
+            }
+            img {
+                position: absolute;
+            }
+        }
+    }
+}

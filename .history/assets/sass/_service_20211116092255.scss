@@ -1,0 +1,27 @@
+.service {
+}
+.serviceOne {
+    &__right {
+        padding: 0 40px;
+        .bigCircle {
+            width: 100%;
+            height: 533px;
+            border: 2px dashed #cccccc;
+            box-sizing: border-box;
+            border-radius: 50%;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 78%;
+                height: 78%;
+                border: 2px dashed #cccccc;
+                box-sizing: border-box;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.topbar {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        img {
+            width: 229px;
+            height: 84px;
+            object-fit: cover;
+        }
+    }
+    &__openTime {
+        color: #424242;
+        text-align: right;
+        .openTime__text {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .openTime__time {
+            font-weight: 700;
+        }
+    }
+    &__seach {
+        input {
+            padding: 12px 16px;
+        }
+    }
+}

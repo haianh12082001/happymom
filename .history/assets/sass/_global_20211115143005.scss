@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "UTM";
+    font-display: swap;
+    src: url("../fonts/word/UTM\ HelvetIns.ttf") format("truetype");
+}
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    color: $text-color;
+    background: #18120b;
+}

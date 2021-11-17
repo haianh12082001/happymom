@@ -1,0 +1,25 @@
+.video {
+    &__main {
+        margin-top: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        background: #fff;
+        .video__img {
+            width: 100%;
+            height: 442px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px 5px 0px 0px;
+            }
+        }
+        .video__info {
+            background: #ffffff;
+            padding: 25px;
+            .name {
+                color: #845522;
+            }
+        }
+    }
+}

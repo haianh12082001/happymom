@@ -1,0 +1,14 @@
+.photoLibrary {
+    &__title {
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__name {
+        font-size: 36px;
+        font-family: "UTM";
+        color: $color-global;
+        text-align: center;
+    }
+}

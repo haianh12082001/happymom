@@ -1,0 +1,42 @@
+.subscribe {
+    padding: 70px 30px;
+
+    &__bg {
+        background-image: url("../img/subscribe.png");
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        padding-top: 30px;
+    }
+    &__img {
+        padding-left: 40px;
+        position: relative;
+        z-index: 2;
+        img {
+            max-width: 450px;
+            height: 436px;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 25%;
+            height: 80%;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+            background-image: url("../img/branch\ 1.png");
+        }
+    }
+    .registerForm {
+        display: flex;
+        justify-content: center;
+    }
+    .form-control {
+        width: 80%;
+    }
+}
