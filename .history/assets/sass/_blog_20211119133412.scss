@@ -32,8 +32,7 @@
     }
     &__des {
         text-align: center;
-        height: 48px;
-        margin: 17px 0;
+        padding: 17px 0;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
@@ -83,12 +82,6 @@
         &__btn {
             // visibility: initial;
             opacity: 1;
-            a {
-                padding: 10px 20px 5px 20px;
-            }
-        }
-        &__name {
-            @include truncate(1);
         }
     }
 }
