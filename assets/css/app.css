@@ -634,7 +634,7 @@ body {
   padding: 25px 0 60px;
 }
 .bannerAdv__item {
-  padding: 0px 46px;
+  padding: 0px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -978,11 +978,10 @@ body {
   padding: 80px 0;
 }
 .serviceFirst__left {
-  padding: 30px;
-  padding-left: 50px;
+  padding: 30px 15px 30px 30px;
 }
 .serviceFirst__right {
-  padding: 0 40px;
+  padding: 0 25px;
   position: relative;
 }
 .serviceFirst .bigCircle__img {
@@ -1021,10 +1020,9 @@ body {
 }
 .serviceSecond__initial {
   padding: 0 30px;
-  padding-left: 50px;
 }
 .serviceSecond__middle {
-  padding: 0 20px;
+  padding: 0 5px;
 }
 .serviceSecond__img {
   max-height: 504px;
@@ -1080,23 +1078,27 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.serviceThird__top--left {
+  padding-left: 30px;
+}
 .serviceThird .serviceThird__top--right {
-  padding-right: 50px;
+  padding-right: 30px;
 }
 .serviceThird__below {
   padding-top: 25px;
 }
 .serviceThird__below--img {
-  padding: 0 50px;
+  padding: 0 25px 0 50px;
   height: 180px;
 }
 .serviceThird__below--img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 30px;
 }
 .serviceThird__below--left {
-  padding-left: 50px;
+  padding: 0 35px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1339,6 +1341,7 @@ body {
   top: 50%;
   left: -30px;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .photoLibrary .slick-prev i {
   font-size: 32px;
@@ -1348,6 +1351,7 @@ body {
   top: 50%;
   right: -30px;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .photoLibrary .slick-next i {
   font-size: 32px;
