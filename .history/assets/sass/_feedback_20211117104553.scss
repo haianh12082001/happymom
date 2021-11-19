@@ -1,0 +1,66 @@
+.feedback {
+    padding-bottom: 90px;
+    padding-top: 100px;
+    background-image: url("../img/feedback/Rectangle\ 8\ \(5\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #845522;
+    }
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 36px;
+        color: #845522;
+        font-family: "UTM";
+        // margin-bottom: 70px;
+    }
+    &__list {
+        // padding-top: 70px;
+    }
+    &__item {
+        padding: 0 44px;
+        transition: 0.3s all linear;
+    }
+    &__name {
+        font-weight: 700;
+        color: #f8972e;
+        text-align: center;
+    }
+    &__company {
+        text-align: center;
+        color: #845522;
+        margin-bottom: 10px;
+    }
+    &__avata {
+        width: 125px;
+        height: 125px;
+        margin: 0 auto;
+        transform: translateY(50%);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__info {
+        padding: 77px 22px 10px 22px;
+        background: #ffffff;
+        border-radius: 30px;
+        height: 314px;
+        text-align: justify;
+    }
+    &__list .slick-list {
+        margin: 0 -44px;
+    }
+    &__item.slick-center {
+        transform: translateY(-20px);
+        .feedback__info {
+            padding-top: 97px;
+            height: 350px;
+        }
+    }
+}

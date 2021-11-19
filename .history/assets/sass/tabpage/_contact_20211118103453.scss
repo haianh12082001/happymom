@@ -1,0 +1,22 @@
+.contact {
+    .block-button {
+        text-align: center;
+        .icon span {
+            background: #3d3d3d;
+            border-radius: 50%;
+            height: 50
+        px
+        ;
+            width: 50
+        px
+        ;
+            position: relative;
+            color: #fff;
+            z-index: 1;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+    }
+}

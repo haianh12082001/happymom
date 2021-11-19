@@ -1,0 +1,63 @@
+.contact {
+    .block-button {
+        text-align: center;
+        .icon {
+            margin: 0 0 15px;
+            cursor: pointer;
+            span {
+                background: #3d3d3d;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                position: relative;
+                color: #fff;
+                z-index: 1;
+                font-size: 1.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }
+        }
+        .name {
+            text-transform: uppercase;
+            color: $color-global;
+            font-family: "UTM";
+        }
+    }
+    .map {
+        height: 450px;
+    }
+    .form {
+        background: $color-global;
+        padding: 30px;
+        .title {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        textarea {
+            height: 140px;
+        }
+        input,
+        textarea {
+            background: #fff;
+            height: 50px;
+            border-radius: 0;
+
+            margin-bottom: 1.5rem;
+            font-size: 0.8rem;
+            color: #000;
+        }
+        .form-control {
+            margin-bottom: 20px;
+            border-radius: 0px;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    .btn {
+        background: #ffc000;
+    }
+}

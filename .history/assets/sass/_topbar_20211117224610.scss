@@ -1,0 +1,120 @@
+.topbar {
+    height: 93px;
+    display: flex;
+    align-items: center;
+    &__pc {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        img {
+            max-width: 229px;
+            max-height: 84px;
+            object-fit: cover;
+        }
+    }
+    &__openTime {
+        color: #424242;
+        text-align: right;
+        .openTime__text {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .openTime__time {
+            font-weight: 700;
+        }
+    }
+    &__seach {
+        position: relative;
+        input {
+            width: 340px;
+            max-width: 340px;
+            background: #f1f2f2;
+            padding: 12px 16px;
+            font-size: 14px;
+            color: #7f808c;
+            border: none;
+            border-radius: 101px;
+        }
+        .button__seach {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            border: none;
+            width: 36px;
+            height: 40px;
+            border-radius: 0px 101px 101px 0px;
+            background: $color-global;
+            i {
+                font-size: 15px;
+                color: #fff;
+            }
+        }
+    }
+    &__hotline {
+        background: linear-gradient(180deg, #f4d593 0%, #f8972e 100%);
+        border-radius: 50px;
+        padding: 6px 24px;
+        display: flex;
+        .hotline__icon {
+            display: flex;
+            align-items: center;
+            margin-right: 9px;
+        }
+        .hotline__text {
+            p {
+                margin-bottom: 0;
+                color: #fff;
+            }
+            &--top {
+                font-size: 14px;
+                font-weight: 400;
+            }
+            &--bottom {
+                font-weight: 700;
+            }
+        }
+    }
+    &__book {
+        display: flex;
+        align-items: center;
+        padding: 17px 31px;
+        color: #8b8b8b;
+        background: #ebebec;
+        border-radius: 100px;
+        .book__icon {
+            margin-right: 8px;
+        }
+        .book__text {
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+    }
+}
+
+@include maxWidth(768px) {
+    .topbar {
+        &__pc {
+            display: none;
+        }
+        &__mobi {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .search__mobi {
+                font-size: 36px;
+                margin-right: 20px;
+                ackground-image: linear-gradient(to right, #d5ab71, #fbe499, #d1a86f);
+                background-size: 100%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .bar__mobi {
+                font-size: 36px;
+            }
+        }
+    }
+}

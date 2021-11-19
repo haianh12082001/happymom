@@ -1,0 +1,44 @@
+.tabNews {
+    .box-article {
+        position: relative;
+    }
+    .item-img {
+        overflow: hidden;
+        border-radius: 20px;
+        img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .content {
+        .box {
+            color: #000;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .content__des {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+        .view-more {
+            font-size: 1rem;
+            position: relative;
+            color: #1d94d0;
+            &::before {
+                content: "";
+                position: absolute;
+                background: #1d94d0;
+                width: 100%;
+                height: 2 px;
+                bottom: -5 px;
+                left: 0;
+                transition: all 0.3s;
+            }
+        }
+    }
+}

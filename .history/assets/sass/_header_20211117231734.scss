@@ -1,0 +1,88 @@
+.header {
+    // height: 59px;
+    background: $color-global;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: none;
+    }
+    &__icon {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        align-items: center;
+        // column-gap: 66px;
+    }
+    &__item {
+        margin-left: 66px;
+        padding: 16px 0;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &__link {
+        color: #fff;
+        font-weight: 500;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        a {
+            width: 31px;
+            height: 31px;
+            background: #fff;
+            border-radius: 50%;
+            margin-left: 8px;
+            i {
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+@include maxWidth(768px) {
+    .header {
+        // display: none;
+        background: #fff;
+        height: 64px;
+        &__social {
+            display: none;
+        }
+        &__logo {
+            display: block;
+            img {
+                max-width: 229px;
+                height: 60px;
+                object-fit: cover;
+            }
+        }
+        &__list {
+            // transform: translateX(-100%);
+            position: absolute;
+            display: block;
+            top: 81px;
+            left: 0;
+            bottom: 0;
+            background: #f8972e;
+            width: 300px;
+            // height: calc(100 vh - 81 px);
+            padding: 15px;
+            text-transform: uppercase;
+            z-index: 9999;
+            transition: all 0.2s;
+            overflow-y: auto;
+            box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
+        }
+        &__icon {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.banner {
+    position: relative;
+    &__img img {
+        width: 100%;
+        max-height: 598px;
+    }
+    &__container {
+        position: absolute;
+    }
+    &__phone {
+        color: #845522;
+        display: flex;
+        .text {
+            font-family: "UTM";
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.tabNews {
+    .box-article {
+        position: relative;
+    }
+    .item-img {
+        overflow: hidden;
+        border-radius: 20px;
+        img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

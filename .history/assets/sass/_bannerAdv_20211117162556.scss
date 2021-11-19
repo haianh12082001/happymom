@@ -1,0 +1,43 @@
+.bannerAdv {
+    background: #fff9ec;
+    padding: 25px 0 60px;
+    &__container {
+    }
+    &__item {
+        padding: 0px 46px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--top {
+            position: relative;
+            display: inline-block;
+            max-width: 180px;
+            height: 207px;
+
+            .text {
+                color: #ffd7ab;
+                font-size: 180px;
+                font-weight: 700;
+                font-family: "Time";
+                line-height: 206px;
+            }
+            img {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                object-fit: cover;
+                width: 136px;
+                height: 114px;
+            }
+        }
+        &--bottom {
+            text-align: center;
+            .name {
+                color: #845522;
+                margin-bottom: 9px;
+                font-weight: 900;
+            }
+        }
+    }
+}

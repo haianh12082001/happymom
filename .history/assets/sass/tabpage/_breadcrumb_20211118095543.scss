@@ -1,0 +1,11 @@
+.breadcrumb {
+    padding: 20px 0;
+    background: transparent;
+    justify-content: center;
+    &-item a {
+        color: #cc9407;
+    }
+    @include maxWidth(768px) {
+        padding: 50px 0 20px;
+    }
+}

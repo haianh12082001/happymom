@@ -1,0 +1,205 @@
+.open__opacity {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px !important;
+    left: 0px;
+    z-index: 88;
+}
+.call {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    // opacity: 0.2;
+    position: absolute;
+    border-radius: 100rem;
+    left: -50px;
+    .icon {
+        padding: 15px;
+        background: #c11b1b;
+
+        border-radius: 100rem;
+        i {
+            font-size: 19px;
+        }
+    }
+}
+.header {
+    // height: 59px;
+    background: $color-global;
+    z-index: 95;
+    position: sticky;
+    top: 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: none;
+    }
+    &__icon {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        align-items: center;
+        // column-gap: 66px;
+    }
+    &__item {
+        margin-left: 66px;
+        padding: 16px 0;
+        position: relative;
+        &:first-child {
+            margin-left: 0;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 20px;
+            bottom: 0;
+            background: transparent;
+            left: -50%;
+        }
+    }
+    &__link {
+        color: #fff;
+        font-weight: 500;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        a {
+            width: 31px;
+            height: 31px;
+            background: #fff;
+            border-radius: 50%;
+            margin-left: 8px;
+            i {
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .sub__menu {
+        position: absolute;
+        width: 250px;
+        background: #f8972e;
+        top: 100px;
+        left: -50%;
+        padding: 0 20px;
+        visibility: hidden;
+        transition: transform 0.8s ease;
+    }
+    .sub__item {
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .sub__link {
+        color: #fff;
+    }
+    @include minWidth(769px) {
+        &__item:hover .sub__menu {
+            animation: submenu 0.5s;
+            animation-fill-mode: both;
+            visibility: visible;
+        }
+        @keyframes submenu {
+            from {
+                top: 200%;
+            }
+            to {
+                top: 100%;
+                transform: rotateY(360deg);
+            }
+        }
+    }
+}
+@include maxWidth(768px) {
+    .header {
+        // display: none;
+        background: #fff;
+        height: 64px;
+        z-index: 95;
+        position: sticky;
+        top: 0;
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+        &__social {
+            display: none;
+        }
+        &__logo {
+            display: block;
+            img {
+                max-width: 229px;
+                height: 60px;
+                object-fit: cover;
+            }
+        }
+        &__list {
+            transform: translateX(-100%);
+            position: absolute;
+            display: block;
+            top: 64px;
+            left: 0;
+            bottom: 0;
+            background: #f8972e;
+            width: 300px;
+            height: calc(100vh - 64px);
+            padding: 15px;
+            text-transform: uppercase;
+            z-index: 9999;
+            transition: all 0.2s;
+            overflow-y: auto;
+            box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
+            &.active {
+                transform: translateX(0);
+            }
+        }
+        &__icon {
+            display: block;
+            i {
+                font-size: 28px;
+                background: linear-gradient(180deg, #f4d593 0%, #f8972e 100%);
+                background-size: 100%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .search__mobi {
+                margin-right: 20px;
+            }
+        }
+        &__item {
+            margin: 0;
+        }
+    }
+}
+
+@include maxWidth(768px) {
+    .header {
+        .sub__menu {
+            position: relative;
+            visibility: visible;
+            left: 0;
+            top: 0;
+            width: 300px;
+            border-left: 1px solid #fff;
+        }
+        .sub__item {
+            border-bottom: transparent;
+            padding: 10px 0;
+        }
+        &__item {
+            padding: 10px 0;
+        }
+        &__item::before {
+            width: 0;
+        }
+    }
+}
