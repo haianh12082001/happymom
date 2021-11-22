@@ -1,0 +1,38 @@
+@mixin maxWidth($q) {
+    @media screen and (max-width: $q) {
+        @content;
+    }
+}
+@mixin minWidth($q) {
+    @media screen and (min-width: $q) {
+        @content;
+    }
+}
+@mixin truncate($q) {
+    display: -webkit-box;
+    -webkit-line-clamp: $q;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+@mixin shine {
+    &::before {
+        position: absolute;
+        top: -50px;
+        left: -90%;
+        z-index: 2;
+        display: block;
+        background-color: #fff;
+        content: "";
+        width: 30px;
+        height: 300px;
+        transform: skewX(-25deg);
+        animation: shine 2s infinite;
+        // animation-delay: -5s;
+    }
+    &:hover {
+        box-shadow: inset 0 4px 4px #c2611c;
+    }
+}
